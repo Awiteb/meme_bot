@@ -37,7 +37,7 @@ def get_meme(message):
 def commands_handler(message):
     text = str(message.text)
     # if user requests meme
-    if text.startswith('get_meme'):
+    if text.startswith('/get_meme'):
         get_meme(message)
     # else
     else:
