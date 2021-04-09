@@ -10,7 +10,7 @@ from time import sleep
 """
 with open('botToken.txt', 'r') as f:
     token = f.read()
-bot = telebot.TeleBot(token=token)
+bot = telebot.TeleBot(token=token.strip('\n'))
 meme_api = "https://meme-api.herokuapp.com/gimme"
 
 start_message = f"""
